@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glint — the Arc Search alternative for iPhone, with on-device AI</title>
+<meta name="description" content="Arc Search loses Browse for Me on November 23, 2026. Glint is an iPhone browser that searches the web, reads the top pages and writes one answer with sources, on your iPhone with Apple Intelligence. Pay once, $4.99. No subscription.">
+<meta property="og:title" content="Glint — the Arc Search alternative for iPhone">
+<meta property="og:description" content="Search for Me answers with sources, written on your iPhone. Ad blocking, auto-archiving tabs, import your Arc Search tabs. Pay once.">
+<meta property="og:type" content="website">
+<link rel="icon" href="icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Glint: AI Search Browser",
+      "operatingSystem": "iOS 26 or later",
+      "applicationCategory": "BrowserApplication",
+      "description": "An iPhone browser that searches the web, reads the top pages and writes one answer with cited sources using Apple Intelligence on the device. Built as a replacement for Arc Search after its AI features shut down on November 23, 2026.",
+      "offers": [
+        {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download with 5 AI answers per day"},
+        {"@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "Glint Pro: unlimited AI answers, one-time purchase"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is the best Arc Search alternative for iPhone?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Glint is built to replace Arc Search on iPhone. It opens straight to search, has a Search for Me feature that reads the top results and writes one answer page with sources, summarizes any page, blocks ads and trackers, and archives unused tabs automatically. The AI runs on the iPhone with Apple Intelligence, so it won't be switched off by a server shutdown."}},
+        {"@type": "Question", "name": "What happens to Arc Search's Browse for Me on November 23, 2026?",
+         "acceptedAnswer": {"@type": "Answer", "text": "The Browser Company is sunsetting Arc. On November 23, 2026 Arc Search on iOS and Android loses Browse for Me and its other AI features, plus sign-in and tab sync. The iPhone app keeps working only as a basic browser. Dia, the company's successor browser, has no public iPhone app."}},
+        {"@type": "Question", "name": "Can I move my Arc Search tabs to Glint?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes. In Arc Search, open the tab switcher, then Settings, then Export Data, and copy the list. In Glint, go to Settings, Import tabs, and paste. Every link becomes a tab. Do this before November 23, when Arc sync ends."}},
+        {"@type": "Question", "name": "Does Glint have a subscription?",
+         "acceptedAnswer": {"@type": "Answer", "text": "No. Glint is free with 5 AI answers a day. Glint Pro is a one-time $4.99 purchase for unlimited answers and summaries. Because answers are generated on the iPhone, there is no server cost to pass on."}},
+        {"@type": "Question", "name": "Which iPhones support Glint's AI answers?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Any iPhone that supports Apple Intelligence (iPhone 15 Pro and newer) running iOS 26 or later with Apple Intelligence turned on. On other iPhones Glint works as an ad-blocking browser and still lists the sources it finds."}},
+        {"@type": "Question", "name": "Is Glint private?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Your questions are never sent to an AI server. Glint has no account and no tracking; tabs and settings stay on your iPhone."}}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #fbf7f2; --ink: #1c1730; --muted: #5d5670; --card: #ffffff; --line: #ece4da;
+    --accent: #e87834; --accent-ink: #ffffff; --deep: #1c1640;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14111f; --ink: #f3eee8; --muted: #a9a2b8; --card: #1e1a2d; --line: #2c2740; --deep: #0d0a18; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header.hero { background: linear-gradient(160deg, #1c1640 0%, #4a2a4a 55%, #e87834 120%); color: #fff; padding: 64px 0 72px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 20px; margin-bottom: 40px; }
+  .brand img { width: 40px; height: 40px; border-radius: 10px; }
+  .eyebrow { display: inline-block; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25);
+             padding: 6px 12px; border-radius: 999px; font-size: 14px; margin-bottom: 18px; }
+  h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.08; margin: 0 0 18px; letter-spacing: -0.02em; }
+  .lede { font-size: 20px; max-width: 640px; opacity: .92; margin: 0 0 28px; }
+  .cta { display: inline-block; background: #fff; color: #1c1640; font-weight: 700; padding: 14px 22px;
+         border-radius: 14px; text-decoration: none; }
+  .cta-note { display: block; margin-top: 12px; font-size: 14px; opacity: .8; }
+  section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 30px; line-height: 1.2; margin: 0 0 20px; letter-spacing: -0.01em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 16px; overflow: hidden;
+          border: 1px solid var(--line); font-size: 16px; }
+  th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 14px; color: var(--muted); font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  .yes { color: #2f9e5b; font-weight: 600; } .no { color: var(--muted); }
+  ol.steps { padding-left: 22px; margin: 0; } ol.steps li { margin-bottom: 10px; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { font-weight: 600; cursor: pointer; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+  footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
+  footer a { color: inherit; }
+  .scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><img src="icon.png" alt="">Glint</div>
+    <span class="eyebrow">Arc Search loses Browse for Me on November 23</span>
+    <h1>The Arc Search alternative for iPhone. With AI that can't be shut off.</h1>
+    <p class="lede">Ask a question. Glint searches the web, reads the top pages and writes one answer with sources. It all runs on your iPhone with Apple Intelligence, so there's no server to sunset and no subscription to pay.</p>
+    <a class="cta" href="#download" id="download">Download on the App Store</a>
+    <span class="cta-note">Free · 5 AI answers a day · Unlimited for $4.99 once</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Everything you used Arc Search for</h2>
+    <div class="grid">
+      <div class="card"><h3>Search for Me</h3><p>One answer page from the top results, with a numbered source on every point.</p></div>
+      <div class="card"><h3>Summarize any page</h3><p>Tap the sparkles and get the gist of a long article in seconds.</p></div>
+      <div class="card"><h3>Opens ready to type</h3><p>Launch straight into search with the keyboard up. No home feed.</p></div>
+      <div class="card"><h3>Tabs that tidy themselves</h3><p>Tabs you haven't opened in a day archive automatically. You choose the timing.</p></div>
+      <div class="card"><h3>Ad and tracker blocking</h3><p>Built in and on by default. Pages load faster and cleaner.</p></div>
+      <div class="card"><h3>Private by design</h3><p>No account, no tracking. Your questions never go to an AI server.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How Glint compares</h2>
+    <div class="scroll">
+    <table>
+      <tr><th></th><th>Glint</th><th>Arc Search after Nov 23</th><th>Dia</th></tr>
+      <tr><td>iPhone app</td><td class="yes">Yes</td><td>Yes, basic browser only</td><td class="no">No public iPhone app</td></tr>
+      <tr><td>AI answers with sources</td><td class="yes">Yes</td><td class="no">Turned off</td><td class="no">Mac only</td></tr>
+      <tr><td>Where the AI runs</td><td class="yes">On your iPhone</td><td class="no">—</td><td>Cloud</td></tr>
+      <tr><td>Price for unlimited AI</td><td class="yes">$4.99 once</td><td class="no">—</td><td>$20/month (Dia Pro)</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bring your Arc Search tabs</h2>
+    <ol class="steps">
+      <li>In Arc Search, tap the tab switcher, then Settings, then <b>Export Data</b>, and copy the list.</li>
+      <li>In Glint, open Settings, then <b>Import tabs</b>, and paste.</li>
+      <li>Every link becomes a tab. Do it before November 23, when Arc's sync ends.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <details><summary>What is the best Arc Search alternative for iPhone?</summary>
+      <p>Glint is built to replace Arc Search on iPhone: search-first launch, Search for Me answer pages with sources, page summaries, ad blocking and auto-archiving tabs. The AI runs on the iPhone, so it can't be switched off by a shutdown.</p></details>
+    <details><summary>What happens to Arc Search on November 23, 2026?</summary>
+      <p>Arc Search loses Browse for Me and its other AI features, plus sign-in and tab sync. On iPhone it keeps working as a basic browser. Dia, the same company's new browser, has no public iPhone app.</p></details>
+    <details><summary>Is there a subscription?</summary>
+      <p>No. Glint is free with 5 AI answers a day. Glint Pro is $4.99 once for unlimited answers and summaries.</p></details>
+    <details><summary>Which iPhones get AI answers?</summary>
+      <p>iPhones that support Apple Intelligence (iPhone 15 Pro and newer) on iOS 26 or later, with Apple Intelligence turned on. Other iPhones get the browser, ad blocking and the list of sources.</p></details>
+    <details><summary>Is it private?</summary>
+      <p>Yes. No account, no tracking, and your questions never go to an AI server. Tabs and settings stay on your iPhone.</p></details>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Glint is an independent app. It is not affiliated with or endorsed by The Browser Company, Arc, Arc Search or Dia; those names belong to their owners and are used only to describe compatibility.</p>
+  <p><a href="privacy.html">Privacy policy</a> · <a href="mailto:support@example.com">Support</a></p>
+</footer>
+</body>
+</html>
